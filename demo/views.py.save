@@ -1,0 +1,1127 @@
+from django.shortcuts import render
+
+# Create your views here.
+
+from django.http import HttpResponse
+
+def index(request):
+          <!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="es-ES" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="icon" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/favicon.ico" type="image/x-icon" />
+<title>Contenidos didácticos de hidrostática - Ibercaja Aula en Red</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.2 - https://yoa.st/1yg?utm_content=6.2 -->
+<meta name="description" content="Contenidos didácticos de hidrostática, trata sobre los líquidos en reposo, su uso en prensas y por qué algunos objetos flotan"/>
+<meta name="keywords" content="contenidos didácticos ejercicios simulaciones"/>
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Contenidos didácticos de hidrostática - Ibercaja Aula en Red" />
+<meta property="og:description" content="Contenidos didácticos de hidrostática, trata sobre los líquidos en reposo, su uso en prensas y por qué algunos objetos flotan" />
+<meta property="og:site_name" content="Ibercaja Aula en Red" />
+<meta property="og:image" content="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif" />
+<meta property="og:image:secure_url" content="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif" />
+<meta property="og:image:width" content="592" />
+<meta property="og:image:height" content="344" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/aulaenred.ibercaja.es\/","name":"Ibercaja Aula en Red","potentialAction":{"@type":"SearchAction","target":"https:\/\/aulaenred.ibercaja.es\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/aulaenred.ibercaja.es\/contenidos-didacticos\/hidrostatica\/","sameAs":[],"@id":"#organization","name":"Fundaci\u00f3n Bancaria Ibercaja","logo":"https:\/\/aulaenred.ibercaja.es\/wp-content\/uploads\/logo-sup-der.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Ibercaja Aula en Red &raquo; Feed" href="https://aulaenred.ibercaja.es/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ibercaja Aula en Red &raquo; RSS de los comentarios" href="https://aulaenred.ibercaja.es/comments/feed/" />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://aulaenred.ibercaja.es/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='https://aulaenred.ibercaja.es/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='default-template-css'  href='https://aulaenred.ibercaja.es/wp-content/plugins/register-plus-redux/extension/readygraph/assets/css/default-popup.css?ver=f19e393f6b3f29ce7211974aad5a0777' type='text/css' media='all' />
+<link rel='stylesheet' id='aulaenred-style-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/style.css?ver=f19e393f6b3f29ce7211974aad5a0777' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/font-awesome.css?ver=f19e393f6b3f29ce7211974aad5a0777' type='text/css' media='all' />
+<!--[if IE 8]>
+<link rel='stylesheet' id='aulaenred-ie8-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/ie8.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='aulaenred-ie7-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/ie7.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+      <script>
+      if (document.location.protocol != "https:") {
+          document.location = document.URL.replace(/^http:/i, "https:");
+      }
+      </script>
+      <script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+<link rel='https://api.w.org/' href='https://aulaenred.ibercaja.es/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aulaenred.ibercaja.es/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aulaenred.ibercaja.es/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://aulaenred.ibercaja.es/?p=3968' />
+<link rel="alternate" type="application/json+oembed" href="https://aulaenred.ibercaja.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://aulaenred.ibercaja.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F&#038;format=xml" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images/ibercaja-aulaenred-fondo.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+
+<link rel="stylesheet" type="text/css" media="all" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/2017.css" />
+
+<link rel="stylesheet" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/2017.css">
+<!--[if ie 9]>
+    <link rel="stylesheet" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/2017-ie.css">
+<![endif]-->
+
+<script src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/scripts.js" type="text/javascript"></script>
+<script src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/2017.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<!-- for Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Ibercaja Aula en Red" />
+<meta name="twitter:image" content="https://aulaenred.ibercaja.es/wp-content/uploads/aula-en-red-logo.png" />
+
+</head>
+
+<body data-rsssl=1 class="c-actividad--resumen">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29081556-1', 'auto');
+  ga('send', 'pageview');
+
+</script><div class="container">
+    <div class="header">
+        <div class="top">
+            <div class="grupotop">
+                <div class="fltlft"><a href="http://www.fundacionbancariaibercaja.es/home/" alt="" target="_blank" class="blanco">Fundaci&oacute;n Bancaria Ibercaja</a></div>
+                <div class="fltrt"><a href="http://www.ibercaja.es" alt="IBERCAJA BANCO" target="_blank" class="blanco">IBERCAJA BANCO</a></div>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="grupologo">
+                <a href="http://obrasocial.ibercaja.es/" alt="Ibercaja Obra Social" target="_blank"><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images/ibercaja.png" alt="Ibercaja Obra Social" width="119" height="31" id="ibercaja" class="fltrt clearfloat" /></a>
+                <div id="aulaenred">
+					<a href="https://aulaenred.ibercaja.es" alt="Ibercaja Aula en Red">
+																								<!--<h3 style="font-size: 45px; line-height: 87%; padding-left: 56px; padding-top: 0; text-decoration:none;">Ibercaja Aula <br />en red</h3>-->
+						<h3>Ibercaja Aula <br />en red</h3>
+					</a>
+				</div>
+            </div>
+        </div>
+
+
+
+
+
+		
+         <div class="c-header__ham">
+        	<button for="" class="c-menu__ham"><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/hamburguesa@2x.svg" alt="Menú"></button>
+        </div>
+        <div class="nota">
+            <div class="gruponota">
+            	<form role="search" method="get" class="search-form" action="https://aulaenred.ibercaja.es/">
+            	<input class="c-header__search  c-input-search" name="s" type="text" placeholder="Buscar"
+					value=""/>
+            	</form>
+            </div>
+        </div>
+
+        
+
+
+
+
+    </div>
+	<!-- end .header -->
+	<div class="menuprincipal   c-menu">
+        <!--div class="grupomenuprincipal"-->
+			<nav id="site-navigation" class="grupomenuprincipal" role="navigation" >
+
+
+
+
+
+				
+				<div class="c-menu__close  u-hide-desktop">
+					<button><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/flecha.svg" alt="Volver"></button>
+				</div>
+
+       	 		
+
+
+
+
+
+					<div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="fltrt"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-38"><a href="https://aulaenred.ibercaja.es/apartado/contenidos-didacticos/">Contenidos Didácticos</a>
+<ul class="sub-menu">
+	<li id="menu-item-5646" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-5646"><a href="https://aulaenred.ibercaja.es/materias/artes/">Artes</a></li>
+	<li id="menu-item-45" class="menu-item menu-item-type-taxonomy menu-item-object-materias current-contenidosdidacticos-ancestor current-menu-parent current-contenidosdidacticos-parent menu-item-45"><a href="https://aulaenred.ibercaja.es/materias/ciencias/">Ciencias</a></li>
+	<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-47"><a href="https://aulaenred.ibercaja.es/materias/humanidades/">Humanidades y Ciencias Sociales</a></li>
+	<li id="menu-item-48" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-48"><a href="https://aulaenred.ibercaja.es/materias/tecnologia-secundaria/">Tecnología</a></li>
+	<li id="menu-item-4894" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-4894"><a href="https://aulaenred.ibercaja.es/materias/educacion/">Educación</a></li>
+</ul>
+</li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-41"><a href="https://aulaenred.ibercaja.es/apartado/niveles-educativos/">Niveles Educativos</a>
+<ul class="sub-menu">
+	<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-niveles menu-item-51"><a href="https://aulaenred.ibercaja.es/niveles/primaria/">Primaria</a></li>
+	<li id="menu-item-52" class="menu-item menu-item-type-taxonomy menu-item-object-niveles current-contenidosdidacticos-ancestor menu-item-52"><a href="https://aulaenred.ibercaja.es/niveles/secundaria/">Secundaria</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-taxonomy menu-item-object-niveles menu-item-49"><a href="https://aulaenred.ibercaja.es/niveles/bachillerato/">Bachillerato</a></li>
+	<li id="menu-item-4895" class="menu-item menu-item-type-taxonomy menu-item-object-niveles menu-item-4895"><a href="https://aulaenred.ibercaja.es/niveles/educadores/">Educadores</a></li>
+</ul>
+</li>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-40"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-profesores/">Actividades profesores</a>
+<ul class="sub-menu">
+	<li id="menu-item-8405" class="menu-item menu-item-type-post_type menu-item-object-formacionprofesores menu-item-8405"><a href="https://aulaenred.ibercaja.es/formacion-para-profesores/educar-futuro-2018/">Educar para el futuro 2018</a></li>
+	<li id="menu-item-7836" class="menu-item menu-item-type-post_type menu-item-object-formacionprofesores menu-item-7836"><a href="https://aulaenred.ibercaja.es/formacion-para-profesores/retos-de-la-innovacion-pedagogica-en-los-centros-educativos-zaragoza-2/">Implementación de la innovación pedagógica en los centros educativos (Zaragoza)</a></li>
+	<li id="menu-item-8085" class="menu-item menu-item-type-post_type menu-item-object-formacionprofesores menu-item-8085"><a href="https://aulaenred.ibercaja.es/formacion-para-profesores/nuevos-retos-educativos-17-18-profesionales-del-ambito-docente-zaragoza/">Nuevos retos educativos 17-18.  Profesionales del ámbito docente (Zaragoza)</a></li>
+	<li id="menu-item-60" class="vertodo menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-60"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-profesores/">Ver todas las actividades></a></li>
+</ul>
+</li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-39"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-estudiantes/">Actividades estudiantes</a>
+<ul class="sub-menu">
+	<li id="menu-item-5941" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5941"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-etopia-zaragoza/">Programas didácticos de Ibercaja en Etopía (Zaragoza)</a></li>
+	<li id="menu-item-5944" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5944"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-para-escolares-zaragoza/">Programas didácticos Ibercaja (Zaragoza)</a></li>
+	<li id="menu-item-5942" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5942"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-para-escolares-huesca/">Programas didácticos Ibercaja (Huesca)</a></li>
+	<li id="menu-item-5943" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5943"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-teruel/">Programas didácticos Ibercaja (Teruel)</a></li>
+	<li id="menu-item-7644" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-7644"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-la-rioja-2/">Programas didácticos Ibercaja (La Rioja)</a></li>
+	<li id="menu-item-7646" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-7646"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-guadalajara-2/">Programas didácticos Ibercaja (Guadalajara)</a></li>
+	<li id="menu-item-3540" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-3540"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-estudiantes/">Ver todas las actividades ></a></li>
+</ul>
+</li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-37"><a href="https://aulaenred.ibercaja.es/apartado/concursos-para-estudiantes/">Concursos estudiantes</a>
+<ul class="sub-menu">
+	<li id="menu-item-7980" class="menu-item menu-item-type-post_type menu-item-object-concursosestudiantes menu-item-7980"><a href="https://aulaenred.ibercaja.es/concursos-para-estudiantes/concurso-reporteros-la-red-2017-2018/">Concurso Reporteros en la Red 2017-2018</a></li>
+	<li id="menu-item-7390" class="menu-item menu-item-type-post_type menu-item-object-concursosestudiantes menu-item-7390"><a href="https://aulaenred.ibercaja.es/concursos-para-estudiantes/concurso-reporteros-la-red-2017-trabajos-ganadores/">Concurso Reporteros en la Red 2016-2017.  Trabajos ganadores</a></li>
+</ul>
+</li>
+</ul></div>
+
+
+
+
+				
+				<div class="c-menu__search  u-hide-desktop">
+
+					<form role="search" method="get" class="search-form" action="https://aulaenred.ibercaja.es/">
+        <input type="search"
+		name="s"
+		placeholder="Introduce tu búsqueda"
+		value=""/>
+</form>
+
+
+				</div>
+
+       	 		
+
+
+
+
+
+
+			</nav><!-- #site-navigation -->		
+		<!--/div-->
+	</div>
+
+<div class="content ">
+  <div class="cuerpo">
+			
+
+<div class="filacuerpo">
+				
+	<h1 class="textoazul fltlft">
+		Hidrostática	</h1>
+
+	<div class="fltrt  u-only-desktop">
+		<a href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-1-3913/" class="enlacegris">
+			<i class="fa fa-chevron-left"></i> volver a la pantalla anterior
+		</a>
+	</div>
+
+	<div class="clearfloat"></div>
+
+</div>
+
+
+
+
+<style type="text/css">
+#ventana_completa {
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 9999;
+	overflow: hidden;
+}
+#ventana_completa .c-actividad__media__content__iframe-wrap {
+	position: relative;
+	margin: auto auto;
+}
+a.pantalla-completa:hover {
+	cursor: pointer;
+}
+</style>
+<div id="ventana_completa"></div>
+
+<div class="filacuerpo">
+
+
+
+<div id="contenido" class="c-actividad">
+	<div class="c-actividad__descripcion c-actividad__descripcion--post-3968">
+		<p>Descubre mediante simulaciones y ejercicios los siguiente conceptos de la hidrostática: Presión. Densidad. Presión hidrostática. Principio de Pascal. Principio de Arquímedes.<br />
+<strong>23</strong> Ejercicios.</p>
+
+		<p>
+			<strong>FORMATO:</strong> 
+			html5		</p>
+
+		<a id="acceder" href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/menu-menu/" class="boton u-only-mobile">Acceder al contenido</a>
+		<a id="acceder" href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-1-3913/" class="boton u-hide-mobile">Acceder al contenido</a>
+
+	</div>
+	<div class="c-actividad__image">
+		<img width="592" height="344" src="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif 592w, https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica-300x174.gif 300w" sizes="(max-width: 592px) 100vw, 592px" />	</div>
+	<div class="c-actividad__wrap">
+		<div class="c-actividad__info">
+			<h3>Niveles / Asignaturas:</h3>
+
+					
+			
+		
+			<a href="https://aulaenred.ibercaja.es/niveles/fisica-y-quimica-secundaria/" class="c-btn--round">
+									Secundaria - 
+								Física y química			</a>
+
+			
+		</div>
+		<div class="c-actividad__info">
+			<h3>Materias:</h3>
+						<a href="https://aulaenred.ibercaja.es/materias/ciencias/" class="c-btn--round">
+				Ciencias			</a>
+					</div>
+		<div class="c-actividad__info  c-share">
+			<h3>Comparte este contenido:</h3>
+			<ul class="c-share__wrap">
+				<li><a href="https://www.facebook.com/sharer/sharer.php?url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" target="_blank">
+					<img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/share?text=Comparte&amp;url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" target="_blank">
+					<img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/twitter.png" alt=""></a></li>
+				<li><a href="whatsapp://send?text=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" target="_blank">
+					<img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/whatsapp.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<br class="clearfloat">
+</div>
+
+
+<div id="ficha"  class="c-actividad__menu-media">
+
+<div class="fltlft c-actividad__menu">
+	<h2 class="c-actividad__menu__title  u-only-mobile">Selecciona un tema:</h2>
+
+	<input type="hidden" id="ejercicioanterior" name="ejercicioanterior" value="">
+
+	<ul class="c-actividad__menu__temas">
+		<li class="apartado">
+			<h1 class="c-h2--cintillo--1col">Presión</h1>
+			<ul class="c-list--links">
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_Presión 1" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-1-3913/"
+								class="url_titulo" 
+				>
+				Presión 1
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_Presión 2" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-2-3914/"
+								class="url_titulo" 
+				>
+				Presión 2
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_Presión 3" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-3-3915/"
+								class="url_titulo" 
+				>
+				Presión 3
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_Presión 4" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-4-3916/"
+								class="url_titulo" 
+				>
+				Presión 4
+			</a>
+
+						
+
+		</li>
+		</ul></li>
+		<li class="apartado">
+			<h1 class="c-h2--cintillo--1col">Densidad</h1>
+			<ul class="c-list--links">
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Densidad_Densidad 1" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/densidad-1-3917/"
+								class="url_titulo" 
+				>
+				Densidad 1
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Densidad_Densidad 2" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/densidad-2-3918/"
+								class="url_titulo" 
+				>
+				Densidad 2
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Densidad_Densidad 3" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/densidad-3-3919/"
+								class="url_titulo" 
+				>
+				Densidad 3
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Densidad_Densidad 4" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/densidad-4-3920/"
+								class="url_titulo" 
+				>
+				Densidad 4
+			</a>
+
+						
+
+		</li>
+		</ul></li>
+		<li class="apartado">
+			<h1 class="c-h2--cintillo--1col">Presión hidrostática</h1>
+			<ul class="c-list--links">
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_hidrostática_Presión hidrostática 1" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-hidrostatica-1-3921/"
+								class="url_titulo" 
+				>
+				Presión hidrostática 1
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_hidrostática_Presión hidrostática 2" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-hidrostatica-2-3922/"
+								class="url_titulo" 
+				>
+				Presión hidrostática 2
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_hidrostática_Presión hidrostática 3" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-hidrostatica-3-3923/"
+								class="url_titulo" 
+				>
+				Presión hidrostática 3
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_hidrostática_Presión hidrostática 4" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-hidrostatica-4-3924/"
+								class="url_titulo" 
+				>
+				Presión hidrostática 4
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Presión_hidrostática_Presión hidrostática 5" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-hidrostatica-5-3925/"
+								class="url_titulo" 
+				>
+				Presión hidrostática 5
+			</a>
+
+						
+
+		</li>
+		</ul></li>
+		<li class="apartado">
+			<h1 class="c-h2--cintillo--1col">Principio de Pascal</h1>
+			<ul class="c-list--links">
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Pascal_Principio de Pascal 1" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-pascal-1-3926/"
+								class="url_titulo" 
+				>
+				Principio de Pascal 1
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Pascal_Principio de Pascal 2" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-pascal-2-3927/"
+								class="url_titulo" 
+				>
+				Principio de Pascal 2
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Pascal_Principio de Pascal 3" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-pascal-3-3928/"
+								class="url_titulo" 
+				>
+				Principio de Pascal 3
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Pascal_Principio de Pascal 4" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-pascal-4-3929/"
+								class="url_titulo" 
+				>
+				Principio de Pascal 4
+			</a>
+
+						
+
+		</li>
+		</ul></li>
+		<li class="apartado">
+			<h1 class="c-h2--cintillo--1col">Principio de Arquímedes</h1>
+			<ul class="c-list--links">
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 1" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-1-3930/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 1
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 2" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-2-3931/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 2
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 3" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-3-3932/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 3
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 4" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-4-3933/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 4
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 5" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-5-3934/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 5
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 6" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-6-3935/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 6
+			</a>
+
+						
+
+		</li>
+				<li class="titulo">
+
+			<a 
+				id="ejercicio_Principio_de_Arquímedes_Principio de Arquímedes 7" 
+				href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/principio-de-arquimedes-7-3936/"
+								class="url_titulo" 
+				>
+				Principio de Arquímedes 7
+			</a>
+
+						
+
+		</li>
+					</ul>
+			</li>
+		</ul>
+		</div>
+
+	<div class="c-actividad__media__share  c-share">
+		<h3>Comparte este contenido:</h3>
+
+     	<ul class="c-share__wrap">
+			<li><a href="https://www.facebook.com/sharer/sharer.php?url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" target="_blank">
+				<img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/facebook.png" alt=""></a></li>
+			<li><a href="https://twitter.com/share?text=Comparte&amp;url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" target="_blank">
+				<img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/twitter.png" alt=""></a></li>
+			<li><a href="whatsapp://send?text=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" target="_blank">
+				<img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/whatsapp.png" alt=""></a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="clearfloat"></div>	
+</div>
+
+
+
+<div class="filacuerpo  c-actividades__otras-actividades">
+<div class="bloque">
+	<div class="cintillo">
+		<div class="titulo">
+			Otras actividades que te pueden interesar
+		</div>
+	</div>
+
+	<div class="fila">
+
+		<div class="c-columns">
+						<p><a href="https://aulaenred.ibercaja.es/contenidos-didacticos/movimiento-circular/">Movimiento Circular</a></p>
+						<p><a href="https://aulaenred.ibercaja.es/contenidos-didacticos/maquinas-termicas/">Máquinas térmicas</a></p>
+						<p><a href="https://aulaenred.ibercaja.es/contenidos-didacticos/formulacion-de-quimica-inorganica/">Formulación y nomenclatura de Química Inorgánica</a></p>
+						<p><a href="https://aulaenred.ibercaja.es/contenidos-didacticos/superconductores-alrededor/">Superconductores a tu alrededor</a></p>
+					</div>
+
+	</div>
+</div>
+</div>
+
+
+
+</div>
+
+<script>
+
+
+jQuery(document).ready(function( $ ) {
+
+	var html5FullScreen = isfullscreenEnabled();
+
+	if (isfullscreenEnabled()) {
+		$('#screen-link').on('click', function(e) {
+			e.preventDefault();
+
+			var el = document.getElementById('ficha');
+			requestFullScreen(el);
+				
+		});
+	} else {
+		$('#screen').hide();
+	}
+
+});
+
+</script>
+
+
+			<!--bloque otras actividades-->
+            <!--Linea separacion-->
+            
+        </div>
+    </div>
+    <div class="footer">
+                <div class="final">
+            <div class="grupofinal">
+                <div class="texto fltlft">
+                    <a href="http://www.fundacionbancariaibercaja.es/" alt="Ibercaja Obra Social" target="_blank"><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images/fundacionbancariablanco.png" alt="iberCaja ObraSocial" width="119" height="38" id="ibercajablanco"  /></a>
+                    <p>
+                        <strong>Fundaci&oacute;n Bancaria Ibercaja. C.I.F. G-50000652.</strong><br />
+			Inscrita en el Registro de Fundaciones del M&deg; de Educaci&oacute;n, Cultura y Deporte con el n&deg; 1689.<br />
+			Domicilio social: Joaqu&iacute;n Costa, 13. 50001 Zaragoza.
+                    </p>
+                    <p>
+                        Fundaci&oacute;n Bancaria Ibercaja está autorizada al uso de la marca "Ibercaja" por Ibercaja Banco S.A., que es titular de la misma
+                    </p>
+                </div>
+                <div class="logotipos fltrt">
+
+                    
+                    <div class="espacio"></div>
+                    
+                    <div class="enlaces">
+		              <div style="text-align:right; float:right;">
+                    	<a href="/contacto/" class="fltlft">Contacto</a>
+                       	<span class="fltlft">|</span>
+                    	<a href="/aviso-legal" class="fltlft">Aviso legal</a>
+                       	<span class="fltlft">|</span>
+                        <a href="/politica-de-cookies" class="fltlft">Política de cookies</a>
+			          </div>
+                    </div>
+                </div>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cookie-law-info-bar"><span>Información acerca de las cookies utilizadas
+
+Le informamos que en el transcurso de su navegación por los sitios web del grupo Ibercaja, se utilizan cookies propias y de terceros (ficheros de datos anónimos), las cuales se almacenan en el dispositivo del usuario, de manera no intrusiva. Estos datos se utilizan exclusivamente para habilitar y estudiar de forma anónima algunas interacciones de la navegación en un sitio Web, y acumulan datos que pueden ser actualizados y recuperados. En el caso de que usted siga navegando por nuestro sitio Web implica que acepta el uso de las cookies indicadas. Puede obtener más información, o bien conocer cómo cambiar la configuración, en nuestra sección  <a href="https://aulaenred.ibercaja.es/politica-de-cookies/" id="CONSTANT_OPEN_URL"  class="cli-plugin-main-link"  >Política de cookies</a>
+<a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Cerrar</a></span></div>		
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#000000","border":"#444","border_on":false,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#ffffff","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000"}'
+				});
+			});
+			//]]>
+		</script>
+		
+		<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/aulaenred.ibercaja.es\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Por favor, prueba que no eres un robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0'></script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/navigation.js?ver=1.0'></script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-includes/js/wp-embed.min.js?ver=f19e393f6b3f29ce7211974aad5a0777'></script>
+</body>
+</html><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="es-ES" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="icon" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/favicon.ico" type="image/x-icon" />
+<title>Contenidos didácticos de hidrostática - Ibercaja Aula en Red</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.2 - https://yoa.st/1yg?utm_content=6.2 -->
+<meta name="description" content="Contenidos didácticos de hidrostática, trata sobre los líquidos en reposo, su uso en prensas y por qué algunos objetos flotan"/>
+<meta name="keywords" content="contenidos didácticos ejercicios simulaciones"/>
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Contenidos didácticos de hidrostática - Ibercaja Aula en Red" />
+<meta property="og:description" content="Contenidos didácticos de hidrostática, trata sobre los líquidos en reposo, su uso en prensas y por qué algunos objetos flotan" />
+<meta property="og:site_name" content="Ibercaja Aula en Red" />
+<meta property="og:image" content="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif" />
+<meta property="og:image:secure_url" content="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif" />
+<meta property="og:image:width" content="592" />
+<meta property="og:image:height" content="344" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/aulaenred.ibercaja.es\/","name":"Ibercaja Aula en Red","potentialAction":{"@type":"SearchAction","target":"https:\/\/aulaenred.ibercaja.es\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/aulaenred.ibercaja.es\/contenidos-didacticos\/hidrostatica\/","sameAs":[],"@id":"#organization","name":"Fundaci\u00f3n Bancaria Ibercaja","logo":"https:\/\/aulaenred.ibercaja.es\/wp-content\/uploads\/logo-sup-der.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Ibercaja Aula en Red &raquo; Feed" href="https://aulaenred.ibercaja.es/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ibercaja Aula en Red &raquo; RSS de los comentarios" href="https://aulaenred.ibercaja.es/comments/feed/" />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://aulaenred.ibercaja.es/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='https://aulaenred.ibercaja.es/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='default-template-css'  href='https://aulaenred.ibercaja.es/wp-content/plugins/register-plus-redux/extension/readygraph/assets/css/default-popup.css?ver=f19e393f6b3f29ce7211974aad5a0777' type='text/css' media='all' />
+<link rel='stylesheet' id='aulaenred-style-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/style.css?ver=f19e393f6b3f29ce7211974aad5a0777' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/font-awesome.css?ver=f19e393f6b3f29ce7211974aad5a0777' type='text/css' media='all' />
+<!--[if IE 8]>
+<link rel='stylesheet' id='aulaenred-ie8-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/ie8.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='aulaenred-ie7-css'  href='https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/ie7.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+      <script>
+      if (document.location.protocol != "https:") {
+          document.location = document.URL.replace(/^http:/i, "https:");
+      }
+      </script>
+      <script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://aulaenred.ibercaja.es/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+<link rel='https://api.w.org/' href='https://aulaenred.ibercaja.es/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aulaenred.ibercaja.es/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aulaenred.ibercaja.es/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://aulaenred.ibercaja.es/?p=3968' />
+<link rel="alternate" type="application/json+oembed" href="https://aulaenred.ibercaja.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://aulaenred.ibercaja.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faulaenred.ibercaja.es%2Fcontenidos-didacticos%2Fhidrostatica%2F&#038;format=xml" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images/ibercaja-aulaenred-fondo.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+
+<link rel="stylesheet" type="text/css" media="all" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/2017.css" />
+
+<link rel="stylesheet" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/2017.css">
+<!--[if ie 9]>
+    <link rel="stylesheet" href="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/css/2017-ie.css">
+<![endif]-->
+
+<script src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/scripts.js" type="text/javascript"></script>
+<script src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/2017.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<!-- for Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Ibercaja Aula en Red" />
+<meta name="twitter:image" content="https://aulaenred.ibercaja.es/wp-content/uploads/aula-en-red-logo.png" />
+
+</head>
+
+<body data-rsssl=1 class="c-actividad--resumen">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29081556-1', 'auto');
+  ga('send', 'pageview');
+
+</script><div class="container">
+    <div class="header">
+        <div class="top">
+            <div class="grupotop">
+                <div class="fltlft"><a href="http://www.fundacionbancariaibercaja.es/home/" alt="" target="_blank" class="blanco">Fundaci&oacute;n Bancaria Ibercaja</a></div>
+                <div class="fltrt"><a href="http://www.ibercaja.es" alt="IBERCAJA BANCO" target="_blank" class="blanco">IBERCAJA BANCO</a></div>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="grupologo">
+                <a href="http://obrasocial.ibercaja.es/" alt="Ibercaja Obra Social" target="_blank"><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images/ibercaja.png" alt="Ibercaja Obra Social" width="119" height="31" id="ibercaja" class="fltrt clearfloat" /></a>
+                <div id="aulaenred">
+					<a href="https://aulaenred.ibercaja.es" alt="Ibercaja Aula en Red">
+																								<!--<h3 style="font-size: 45px; line-height: 87%; padding-left: 56px; padding-top: 0; text-decoration:none;">Ibercaja Aula <br />en red</h3>-->
+						<h3>Ibercaja Aula <br />en red</h3>
+					</a>
+				</div>
+            </div>
+        </div>
+
+
+
+
+
+		
+         <div class="c-header__ham">
+        	<button for="" class="c-menu__ham"><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/hamburguesa@2x.svg" alt="Menú"></button>
+        </div>
+        <div class="nota">
+            <div class="gruponota">
+            	<form role="search" method="get" class="search-form" action="https://aulaenred.ibercaja.es/">
+            	<input class="c-header__search  c-input-search" name="s" type="text" placeholder="Buscar"
+					value=""/>
+            	</form>
+            </div>
+        </div>
+
+        
+
+
+
+
+    </div>
+	<!-- end .header -->
+	<div class="menuprincipal   c-menu">
+        <!--div class="grupomenuprincipal"-->
+			<nav id="site-navigation" class="grupomenuprincipal" role="navigation" >
+
+
+
+
+
+				
+				<div class="c-menu__close  u-hide-desktop">
+					<button><img src="https://aulaenred.ibercaja.es/wp-content/themes/aula-en-red/images2017/flecha.svg" alt="Volver"></button>
+				</div>
+
+       	 		
+
+
+
+
+
+					<div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="fltrt"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-38"><a href="https://aulaenred.ibercaja.es/apartado/contenidos-didacticos/">Contenidos Didácticos</a>
+<ul class="sub-menu">
+	<li id="menu-item-5646" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-5646"><a href="https://aulaenred.ibercaja.es/materias/artes/">Artes</a></li>
+	<li id="menu-item-45" class="menu-item menu-item-type-taxonomy menu-item-object-materias current-contenidosdidacticos-ancestor current-menu-parent current-contenidosdidacticos-parent menu-item-45"><a href="https://aulaenred.ibercaja.es/materias/ciencias/">Ciencias</a></li>
+	<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-47"><a href="https://aulaenred.ibercaja.es/materias/humanidades/">Humanidades y Ciencias Sociales</a></li>
+	<li id="menu-item-48" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-48"><a href="https://aulaenred.ibercaja.es/materias/tecnologia-secundaria/">Tecnología</a></li>
+	<li id="menu-item-4894" class="menu-item menu-item-type-taxonomy menu-item-object-materias menu-item-4894"><a href="https://aulaenred.ibercaja.es/materias/educacion/">Educación</a></li>
+</ul>
+</li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-41"><a href="https://aulaenred.ibercaja.es/apartado/niveles-educativos/">Niveles Educativos</a>
+<ul class="sub-menu">
+	<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-niveles menu-item-51"><a href="https://aulaenred.ibercaja.es/niveles/primaria/">Primaria</a></li>
+	<li id="menu-item-52" class="menu-item menu-item-type-taxonomy menu-item-object-niveles current-contenidosdidacticos-ancestor menu-item-52"><a href="https://aulaenred.ibercaja.es/niveles/secundaria/">Secundaria</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-taxonomy menu-item-object-niveles menu-item-49"><a href="https://aulaenred.ibercaja.es/niveles/bachillerato/">Bachillerato</a></li>
+	<li id="menu-item-4895" class="menu-item menu-item-type-taxonomy menu-item-object-niveles menu-item-4895"><a href="https://aulaenred.ibercaja.es/niveles/educadores/">Educadores</a></li>
+</ul>
+</li>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-40"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-profesores/">Actividades profesores</a>
+<ul class="sub-menu">
+	<li id="menu-item-8405" class="menu-item menu-item-type-post_type menu-item-object-formacionprofesores menu-item-8405"><a href="https://aulaenred.ibercaja.es/formacion-para-profesores/educar-futuro-2018/">Educar para el futuro 2018</a></li>
+	<li id="menu-item-7836" class="menu-item menu-item-type-post_type menu-item-object-formacionprofesores menu-item-7836"><a href="https://aulaenred.ibercaja.es/formacion-para-profesores/retos-de-la-innovacion-pedagogica-en-los-centros-educativos-zaragoza-2/">Implementación de la innovación pedagógica en los centros educativos (Zaragoza)</a></li>
+	<li id="menu-item-8085" class="menu-item menu-item-type-post_type menu-item-object-formacionprofesores menu-item-8085"><a href="https://aulaenred.ibercaja.es/formacion-para-profesores/nuevos-retos-educativos-17-18-profesionales-del-ambito-docente-zaragoza/">Nuevos retos educativos 17-18.  Profesionales del ámbito docente (Zaragoza)</a></li>
+	<li id="menu-item-60" class="vertodo menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-60"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-profesores/">Ver todas las actividades></a></li>
+</ul>
+</li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-39"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-estudiantes/">Actividades estudiantes</a>
+<ul class="sub-menu">
+	<li id="menu-item-5941" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5941"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-etopia-zaragoza/">Programas didácticos de Ibercaja en Etopía (Zaragoza)</a></li>
+	<li id="menu-item-5944" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5944"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-para-escolares-zaragoza/">Programas didácticos Ibercaja (Zaragoza)</a></li>
+	<li id="menu-item-5942" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5942"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-para-escolares-huesca/">Programas didácticos Ibercaja (Huesca)</a></li>
+	<li id="menu-item-5943" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-5943"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-teruel/">Programas didácticos Ibercaja (Teruel)</a></li>
+	<li id="menu-item-7644" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-7644"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-la-rioja-2/">Programas didácticos Ibercaja (La Rioja)</a></li>
+	<li id="menu-item-7646" class="menu-item menu-item-type-post_type menu-item-object-formacionalumnos menu-item-7646"><a href="https://aulaenred.ibercaja.es/formacion-para-alumnos/programas-didacticos-ibercaja-guadalajara-2/">Programas didácticos Ibercaja (Guadalajara)</a></li>
+	<li id="menu-item-3540" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-3540"><a href="https://aulaenred.ibercaja.es/apartado/actividades-para-estudiantes/">Ver todas las actividades ></a></li>
+</ul>
+</li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-otrocontenido menu-item-37"><a href="https://aulaenred.ibercaja.es/apartado/concursos-para-estudiantes/">Concursos estudiantes</a>
+<ul class="sub-menu">
+	<li id="menu-item-7980" class="menu-item menu-item-type-post_type menu-item-object-concursosestudiantes menu-item-7980"><a href="https://aulaenred.ibercaja.es/concursos-para-estudiantes/concurso-reporteros-la-red-2017-2018/">Concurso Reporteros en la Red 2017-2018</a></li>
+	<li id="menu-item-7390" class="menu-item menu-item-type-post_type menu-item-object-concursosestudiantes menu-item-7390"><a href="https://aulaenred.ibercaja.es/concursos-para-estudiantes/concurso-reporteros-la-red-2017-trabajos-ganadores/">Concurso Reporteros en la Red 2016-2017.  Trabajos ganadores</a></li>
+</ul>
+</li>
+</ul></div>
+
+
+
+
+				
+				<div class="c-menu__search  u-hide-desktop">
+
+					<form role="search" method="get" class="search-form" action="https://aulaenred.ibercaja.es/">
+        <input type="search"
+		name="s"
+		placeholder="Introduce tu búsqueda"
+		value=""/>
+</form>
+
+
+				</div>
+
+       	 		
+
+
+
+
+
+
+			</nav><!-- #site-navigation -->		
+		<!--/div-->
+	</div>
+
+<div class="content ">
+  <div class="cuerpo">
+			
+
+<div class="filacuerpo">
+				
+	<h1 class="textoazul fltlft">
+		Hidrostática	</h1>
+
+	<div class="fltrt  u-only-desktop">
+		<a href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-1-3913/" class="enlacegris">
+			<i class="fa fa-chevron-left"></i> volver a la pantalla anterior
+		</a>
+	</div>
+
+	<div class="clearfloat"></div>
+
+</div>
+
+
+
+
+<style type="text/css">
+#ventana_completa {
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 9999;
+	overflow: hidden;
+}
+#ventana_completa .c-actividad__media__content__iframe-wrap {
+	position: relative;
+	margin: auto auto;
+}
+a.pantalla-completa:hover {
+	cursor: pointer;
+}
+</style>
+<div id="ventana_completa"></div>
+
+<div class="filacuerpo">
+
+
+
+<div id="contenido" class="c-actividad">
+	<div class="c-actividad__descripcion c-actividad__descripcion--post-3968">
+		<p>Descubre mediante simulaciones y ejercicios los siguiente conceptos de la hidrostática: Presión. Densidad. Presión hidrostática. Principio de Pascal. Principio de Arquímedes.<br />
+<strong>23</strong> Ejercicios.</p>
+
+		<p>
+			<strong>FORMATO:</strong> 
+			html5		</p>
+
+		<a id="acceder" href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/menu-menu/" class="boton u-only-mobile">Acceder al contenido</a>
+		<a id="acceder" href="https://aulaenred.ibercaja.es/contenidos-didacticos/hidrostatica/presion-1-3913/" class="boton u-hide-mobile">Acceder al contenido</a>
+
+	</div>
+	<div class="c-actividad__image">
+		<img width="592" height="344" src="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica.gif 592w, https://aulaenred.ibercaja.es/wp-content/uploads/hidrostatica-300x174.gif 300w" sizes="(max-width: 592px) 100vw, 592px" />	</div>
+	<div class="c-actividad__wrap">
+		<div class="c-actividad__info">
+			<h3>Niveles / Asignaturas:</h3>
+
+					
+			
+		
+			<a href="https://aulaenred.ibercaja.es/niveles/fisica-y-quimica-secundaria/" class="c-btn--round">
+									Secundaria - 
+								Física y química			</a>
+
+			
+		</div>
+		<div class="c-actividad__info">
+			<h3>Materias:</h3>
+
+
+
+	 return HttpResponse("hello, wordl")
